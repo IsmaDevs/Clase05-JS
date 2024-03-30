@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Clase 05</title>
+  </head>
+  <body class="text-center">
+    <header class="header text-center">
+      <br>
+      <h1>JavaScript 2023</h1>
+      <br />
+      <hr />
+    </header>
+    <main class="main">
+      <br />
+      <h3>Datos del Alumno</h3>
+      <!--Aqui muestro la informacion de un solo alumno -->
+      <div id="alumno"></div>
+      
+      <hr />
+      <br />
+      <h3 class="text-danger">Agrega Un nuevo Alumno</h3>
+      <!--Formulario para pedir la informacion del alumno-->
+      <form action="" class="form">
+        <br>
+        <label for="nombre">Nombre y Apellido</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="ingresa tu nom y apellido"
+          id="nombre"
+        />
+        <br />
+        <label for="">legajo</label>
+        <input
+          type="number"
+          id="legajo"
+          placeholder="ingresa tu legajo"
+          min="1"
+          max="100"
+        />
+        <br />
+        <label for="">Fecha Nacimiento</label>
+        <input type="date" id="fechaNac" />
+        <br />
+        <label for="">domicilio</label>
+        <input type="text" id="domicilio" />
+        <br />
+        <label for="">Masculino</label>
+        <input type="radio" name="sexo" id="masculino" />
+        <br />
+        <label for="">Femenino</label>
+        <input type="radio" name="sexo" id="femenino" />
+        <br />
+        <label for="">estado civil</label>
+        <input type="text" id="estadoCivil" />
+        <br />
+        <label for="">color favorito</label>
+        <input type="color" id="color" />
+        <br />
+        <button type="button" onclick="handleSubmit()">agregar</button>
+        <br>
+      </form>
+      <hr />
+      <h3>listado de alumnos</h3>
+      <br />
+      <!--Aqui voy a mostrar mi array de objetos de alumnos-->
+      <div id="dato"></div>
+      <br />
+      <div class="article">
+
+        <h4 class="text-warning">probando el strong dentro de un parrafo</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet voluptas <strong>rerum</strong> <strong>aliquam reiciendis voluptatem</strong>, odio quam quia tempore! Quis laudantium illo itaque adipisci sit iste quibusdam libero saepe fuga.</p>
+        <br>
+      </div>
+    </main>
+    <footer class="footer text-center">
+      <hr>
+      <br />
+      <h4>Derechos Reservados 2023</h4>
+      <br>
+    </footer>
+  </body>
+</html>
